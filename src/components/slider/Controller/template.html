@@ -1,0 +1,19 @@
+<div class="Slider-Controller__wrapper">
+    <div class="Slider-Controller-button__prev">
+        <i
+                class="fa fa-arrow-left"
+                @click="changeSlide(false)"
+        ></i>
+    </div>
+
+    <Area
+        :currentSlide="currentSlide"
+    />
+
+    <div class="Slider-Controller-button__next">
+        <i
+                class="fa fa-arrow-right"
+                @click="changeSlide(true)"
+        ></i>
+    </div>
+</div>

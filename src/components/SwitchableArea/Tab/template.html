@@ -1,0 +1,20 @@
+<div class="SwitchableArea-Tab-wrapper">
+    <div class="SwitchArea-Tab__tab"
+        :class="{'witchArea-Tab__tab-active': this.currentTab === 'tab-1'}"
+         @click="clickTab(tab-1)"
+    >
+        Сотрудники
+    </div>
+    <div class="SwitchArea-Tab__tab"
+         :class="{'witchArea-Tab__tab-active': this.currentTab === 'tab-2'}"
+         @click="clickTab(tab-2)"
+    >
+        Счета
+    </div>
+    <div class="SwitchArea-Tab__tab"
+         :class="{'witchArea-Tab__tab-active': this.currentTab === 'tab-3'}"
+         @click="clickTab(tab-3)"
+    >
+        Документы
+    </div>
+</div>

@@ -1,25 +1,31 @@
 <template>
-  <ParentComponent/>
+  <Controller/>
 </template>
 
 <script>
-import ParentComponent from "@/components/ParentComponent";
+import Controller from "@/components/slider/Controller/Controller";
+
 
 export default {
   name: 'App',
   components: {
-    ParentComponent,
+    Controller
   }
 }
+
 </script>
 
 <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
 }
 </style>

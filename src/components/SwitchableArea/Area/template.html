@@ -1,0 +1,21 @@
+<div class="SwitchableArea-Area__wrapper">
+    <div
+           class="SwitchableArea-Area__area"
+           style="background: red"
+           v-if="this.currentTab === 'tab-1'"
+    >
+        Сотрудники
+    </div>
+    <div class="SwitchableArea-Area__area"
+         style="background: yellow"
+         v-if="this.currentTab === 'tab-2'"
+    >
+        Счета
+    </div>
+    <div class="SwitchableArea-Area__area"
+         style="background: aquamarine"
+         v-if="this.currentTab === 'tab-3'"
+    >
+        Документы
+    </div>
+</div>
